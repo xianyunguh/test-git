@@ -106,3 +106,7 @@ $ git reset HEAD readme.txt		# 把暂存区的修改撤销掉（unstage），重
 	默认的 git:// 使用ssh，但也可以使用 https 等其他协议。
 	使用https除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开
 	放http端口的公司内部就无法使用 ssh 协议而只能用 https 。
+
+	
+	
+https://blog.csdn.net/p106786860/article/details/52023885
