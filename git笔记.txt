@@ -23,4 +23,4 @@
 		
 其他命令：
 $ git status   #显示当前仓库状态
-$ git diff readme.txt	# 显示readme.txt改变情况
+$ git diff readme.txt	# 查看readme.txt修改内容
