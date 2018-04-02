@@ -35,3 +35,17 @@
 		类似 3628164...882e1e0 的是 commit id （版本号）
 	$ git log --pretty=oneline readme.txt	# 查看某一个文件的日志
 	
+在Git中，用 HEAD 表示当前版本，上一个版本就是 HEAD^ ，上上一个版本就是 HEAD^^ ，往上100个版本写成 HEAD~100
+	$ git reset --hard HEAD^	# 回退到上一个版本，注意:这条命令是把所有文件都回退到上一个版本。
+	$ git reset --hard 3628164	# 指定回到未来的某个版本
+	$ git reflog	# 记录你曾经用过的每一条命令
+	问题：如何只回退某一个文件
+	
+HEAD 指向的版本就是当前版本
+问题：如何查看HEAD的当前位置
+
+工作区（Working Directory）：就是你在电脑里能看到的目录
+版本库（Repository）：
+	工作区有一个隐藏目录 .git ，这个不算工作区，而是Git的版本库。
+	Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有
+	Git为我们自动创建的第一个分支 master ，以及指向 master 的一个指针叫 HEAD 。	
