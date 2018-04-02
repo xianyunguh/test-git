@@ -20,7 +20,18 @@
 第四步：提交修改和提交新文件：（跟新建是一样的）
 	1.git add readme.txt
 	2.git commit -m "新增或修改了xx内容"
-		
+		每当你觉得文件修改到一定程度的时候，就可以“保存一个快照”，这个快照在Git中被称为 commit 。
+		一旦你把文件改乱了，或者误删了文件，还可以从最近的一个 commit 恢复。
+
 其他命令：
-$ git status   #显示当前仓库状态
-$ git diff readme.txt	# 查看readme.txt修改内容
+	$ git status   #显示当前仓库状态
+	$ git diff readme.txt	# 查看readme.txt修改内容
+	$ git log	# 显示从最近到最远的提交日志
+	$ git log --pretty=oneline	# 比较简洁地显示提交日志
+		结果类似下面的：
+		3628164fb26d48395383f8f31179f24e0882e1e0 append GPL
+		ea34578d5496d7dd233c827ed32a8cd576c5ee85 add distributed
+		cb926e7ea50ad11b8f9e909c05226233bf755030 wrote a readme file
+		类似 3628164...882e1e0 的是 commit id （版本号）
+	$ git log --pretty=oneline readme.txt	# 查看某一个文件的日志
+	
